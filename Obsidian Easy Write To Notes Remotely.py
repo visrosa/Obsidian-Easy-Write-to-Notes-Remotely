@@ -6,8 +6,8 @@ from datetime import date
 import time
 import glob, os
 
-ObsidianVaultFolder = ""    # Example :"C:/Users/User/Documents/ObsidianVault/VaultName"
-DailyNotesFolder = ""       # Example :"C:/Users/User/Documents/ObsidianVault/VaultName/DailyNotes"
+ObsidianVaultFolder = "C:/Users/Bernardes/Documents/vv/lic"    # Example :"C:/Users/User/Documents/ObsidianVault/VaultName"
+DailyNotesFolder = "C:/Users/Bernardes/Documents/vv/lic/" + str(date.today())       # Example :"C:/Users/User/Documents/ObsidianVault/VaultName/DailyNotes"
 print(DailyNotesFolder)
 today = date.today()
 
@@ -29,7 +29,9 @@ def CurrentDate():
     elif dateExtractDay[-1] == "3":       
         dateExtractNUM = str(dateExtractDay + "rd")
     RoamFormat = str(dateExtractMonth + " " + dateExtractNUM + ", " + dateExtractYear)
-    return RoamFormat
+#    return RoamFormat
+    return str(date.today())
+
 print(CurrentDate())
 
 def CurrentDailyNote():
