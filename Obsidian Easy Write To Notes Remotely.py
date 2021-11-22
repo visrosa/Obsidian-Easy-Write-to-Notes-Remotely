@@ -29,9 +29,8 @@ def CurrentDate():
     elif dateExtractDay[-1] == "3":       
         dateExtractNUM = str(dateExtractDay + "rd")
     RoamFormat = str(dateExtractMonth + " " + dateExtractNUM + ", " + dateExtractYear)
-#    return RoamFormat
+    #return RoamFormat
     return str(date.today())
-
 print(CurrentDate())
 
 def CurrentDailyNote():
@@ -125,4 +124,3 @@ while True:
             AppendToNote(Block())
             RemoveSymbol()
         time.sleep(1)
-
